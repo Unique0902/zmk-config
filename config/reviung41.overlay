@@ -8,11 +8,11 @@
         label = "KSCAN_CUSTOM";
         polling-interval-msec = <25>;
 
-        /* 'row-gpios'를 'output-gpios'로 변경했습니다 */
+      /* ACTIVE_HIGH를 ACTIVE_LOW로 변경하여 디코더의 출력 방식과 맞춥니다 */
         output-gpios
-            = <&gpio0 31 GPIO_ACTIVE_HIGH> // A0
-            , <&gpio0 29 GPIO_ACTIVE_HIGH> // A1
-            , <&gpio0 2  GPIO_ACTIVE_HIGH> // A2
+            = <&gpio0 31 GPIO_ACTIVE_LOW> // A0
+            , <&gpio0 29 GPIO_ACTIVE_LOW> // A1
+            , <&gpio0 2  GPIO_ACTIVE_LOW> // A2
             ;
 
         /* 컬럼 설정 (이건 그대로 두시면 됩니다) */
