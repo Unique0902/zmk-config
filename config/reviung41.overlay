@@ -5,6 +5,7 @@
 
     kscan_custom: kscan_custom {
         compatible = "zmk,kscan-gpio-demux";
+        unselected-gpios-state = "high";
         label = "KSCAN_CUSTOM";
         polling-interval-msec = <25>;
 
