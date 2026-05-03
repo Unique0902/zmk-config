@@ -5,9 +5,8 @@
 
     kscan_custom: kscan_custom {
         compatible = "zmk,kscan-gpio-demux";
-        unselected-gpios-state = "high";
         label = "KSCAN_CUSTOM";
-        polling-interval-msec = <25>;
+        polling-interval-msec = <50>;
 
       /* ACTIVE_HIGH를 ACTIVE_LOW로 변경하여 디코더의 출력 방식과 맞춥니다 */
         output-gpios
